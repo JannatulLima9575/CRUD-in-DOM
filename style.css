@@ -25,7 +25,7 @@
 .navbar .nav-title {
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
   line-height: 38px;
   letter-spacing: 0%;
@@ -142,7 +142,6 @@
   gap: 32px;
   padding: 0px;
   height: 100%;
-  display: flex;
   margin: 24px 0px;
 }
 .pillar-card {
@@ -661,6 +660,9 @@
   border: none;
   outline: none;
 }
+.Quote {
+  display: none;
+}
 .subscribe_btn {
   border-radius: 0px 10px 10px 0px;
   background: rgb(0, 106, 80);
@@ -728,6 +730,21 @@ footer {
   margin: 32px 0px;
   border: 1px solid rgba(14, 14, 14, 0.1);
 }
+.futures {
+  width: auto;
+  height: auto;
+}
+.future-title {
+  font-size: 24px;
+}
+.future-description {
+  padding: 10px;
+}
+.future-container {
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+}
 
 /* Responsive section */
 /* Responsive section */
@@ -735,13 +752,10 @@ footer {
 /* Small devices (phones, max-width: 576px) */
 @media screen and (max-width: 576px) {
   .navbar {
-    flex-direction: column;
     height: auto;
-    padding: 16px;
-    text-align: center;
   }
-  .nav-title {
-    font-size: 18px;
+  .navbar .nav-title{
+    font-size: 24px;
   }
   .sign-in {
     font-size: 14px;
@@ -753,6 +767,10 @@ footer {
     height: auto;
     padding: 40px 20px;
     text-align: center;
+  }
+  .banner-container {
+    padding: 0;
+    width: auto;
   }
   .banner-sub-title {
     font-size: 32px;
@@ -803,16 +821,22 @@ footer {
     width: 100%;
     padding: 20px;
   }
+  .pillar-card {
+    margin-top: 0px;
+  }
+
   .donate-item {
     flex-direction: column;
-    padding: 10px;
+    gap: 12px;
   }
   .donate input {
     width: 100%;
     height: 50px;
     font-size: 16px;
   }
-
+  .futures {
+    width: auto;
+  }
   .newsletter {
     width: 100%;
     height: auto;
@@ -835,15 +859,19 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  .news-img {
+    margin: 0;
+  }
+  .news-left {
+    padding-top: 20px;
+  }
 }
 
+
 /* Medium devices (tablets, max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
   .navbar {
     padding: 16px;
-  }
-  .nav-title {
-    font-size: 22px;
   }
   .sign-in {
     font-size: 16px;
@@ -855,41 +883,68 @@ footer {
     padding: 50px 30px;
   }
   .banner-sub-title {
-    font-size: 42px;
+    font-size: 28px;
+  }
+  .banner-container {
+    flex-direction: 1;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-img {
+    display: none;
   }
 
   .Pillars {
-    padding: 60px 40px;
+    padding: 10px 40px;
+    margin: 0px;
+    width: auto;
   }
-  .Pillars .container {
-    flex-wrap: wrap;
-    justify-content: center;
+  .pillars-title {
+    font-size: 24px;
   }
 
   .future-container {
     flex-wrap: wrap;
   }
 
-  .news {
-    padding: 40px;
-  }
   .news-1 {
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
+  }
+  .news-img {
+    margin: 0;
   }
 
   .donate {
-    padding: 40px;
+    padding: 10px;
   }
   .donate input {
     width: 80%;
   }
 
   .newsletter {
-    padding: 40px;
+    padding: 10px;
+  }
+  .newsletter_container {
+    padding: 10px;
   }
   .newsletter_container input {
-    width: 80%;
+    padding: 5px 10px;
+    width: 200px;
+  }
+  .subscribe_btn {
+    padding: 11px 10px;
+    width: 100px;
+  }
+  .newsletter-description {
+    margin-bottom: 40px;
+  }
+  .spam {
+    margin-top: 14px;
+  }
+  .newsletter-title {
+    font-size: 25px;
   }
 
   footer {
