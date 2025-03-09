@@ -83,6 +83,8 @@
   font-size: 24px;
   font-weight: 300;
 }
+/* animation */
+
 .banner-sub-title {
   font-size: 56px;
   font-weight: 700;
@@ -219,7 +221,6 @@
   gap: 32px;
   padding: 0px;
   height: 100%;
-  display: flex;
   margin: 24px 0px;
 }
 
@@ -730,21 +731,8 @@ footer {
   margin: 32px 0px;
   border: 1px solid rgba(14, 14, 14, 0.1);
 }
-.futures {
-  width: auto;
-  height: auto;
-}
-.future-title {
-  font-size: 24px;
-}
-.future-description {
-  padding: 10px;
-}
-.future-container {
-  flex-direction: column;
-  gap: 16px;
-  padding: 10px;
-}
+
+
 
 /* Responsive section */
 /* Responsive section */
@@ -762,6 +750,16 @@ footer {
     padding: 5px 8px;
   }
 
+  .futures {
+    width: auto;
+    height: auto;
+  }
+  .future-title {
+    font-size: 24px;
+  }
+  .future-description {
+    padding: 10px;
+  }
   .banner {
     flex-direction: column;
     height: auto;
